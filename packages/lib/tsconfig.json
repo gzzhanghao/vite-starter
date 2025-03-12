@@ -1,0 +1,16 @@
+{
+  "extends": "@tsconfig/node22/tsconfig.json",
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "tsBuildInfoFile": "node_modules/.tmp/tsconfig.tsbuildinfo",
+    "baseUrl": ".",
+    "rootDir": "./src",
+    "composite": true,
+    "moduleResolution": "nodenext",
+    "skipLibCheck": true,
+    "types": ["node"],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
